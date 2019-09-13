@@ -1,8 +1,15 @@
 <div class="container">
+  <section>
+  
+</section>
   <div class="row">
     {{ message }}
     <div class="col-sm-6 centered-form">
-      <form action="/signup" method="post">
+      <h2>Upload your photo</h2>
+  <form action="/signup" method="post" enctype="multipart/form-data">
+
+        <input type="file" name="file">
+
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" name="username" class="form-control">
@@ -16,7 +23,7 @@
           <input type="password" name="password" class="form-control">
         </div>
         <button type="submit">Signup</button>
-      </form>
+  </form>
     </div>
   </div>
 </div>

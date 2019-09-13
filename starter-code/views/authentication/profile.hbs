@@ -1,0 +1,9 @@
+<div class="row d-flex justify-content-center">
+  {{#each users}}
+    <figure>
+      {{!-- <img src={{this.url}} alt={{this.description}}> --}}
+      <img src={{this.imageurl}} alt={{this.username}}>
+      <p>{{this.username}}</p>
+    </figure>
+  {{/each}}
+</div>
